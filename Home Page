@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Games Home Page</title>
+
+<style>
+html{
+ background-image: url("");
+ background-size: 100%;
+ background-attachment: fixed;
+}
+body{
+ border: 2px solid blue;
+ border-radius: 10px;
+ background: rgba(150,150,200,0.5);
+}
+p {
+ text-align: center;
+}
+div{
+ text-align: center;
+ background-color: #689df2;
+ transform: translate(0, 100%)
+}
+a{
+ border: 2px solid blue;
+ border-radius: 10px;
+ background: rgba(0,191,255,0.5);
+ opacity: 0.9;
+}
+a:hover {
+ background: rgba(70,240,255,0.9);
+}
+h1{
+ text-align: center;
+}
+h2{
+ text-align: center;
+}
+</style>
+
+<h1>Welcome PCSS</h1>
+<p>If you are a teacher looking to add announcements select <em><b>Add Announcements</b></em>, but remember your password.<br/>If you wish to view the announcements, select <em><b>See Announcements</b></em>; no password required.</p><br>
+<h2><a href='add_ann.php'> <b>Add</b> Announcements </a></h2>
+<h2><a href='placeholder.php'> <b>See</b> Announcements</a></h2>
+<p><em><b>See Announcements</b></em> Button is currently under reconstruction do to problems, please do not click</p>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    header('Location: unionsite.php');
+}
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
