@@ -5,14 +5,15 @@
 
 <style>
 html{
- background-image: url("");
+ background-image: url("https://itsshowtimenj.files.wordpress.com/2013/10/abstractdesktop-astounding-wood-background-wallpaper-backgrounds.jpg");
  background-size: 100%;
  background-attachment: fixed;
 }
 body{
- border: 2px solid blue;
+ border: 2px solid brown;
  border-radius: 10px;
- background: rgba(150,150,200,0.5);
+ background: rgba(139,69,19,0.3);
+ text-align: center;
 }
 p {
  text-align: center;
@@ -33,27 +34,19 @@ a:hover {
 }
 h1{
  text-align: center;
-}
-h2{
- text-align: center;
+ color: white;
+ font-family: Arial;
+ font-size:10vw;
 }
 </style>
 
-<h1>Welcome PCSS</h1>
-<p>If you are a teacher looking to add announcements select <em><b>Add Announcements</b></em>, but remember your password.<br/>If you wish to view the announcements, select <em><b>See Announcements</b></em>; no password required.</p><br>
-<h2><a href='add_ann.php'> <b>Add</b> Announcements </a></h2>
-<h2><a href='placeholder.php'> <b>See</b> Announcements</a></h2>
-<p><em><b>See Announcements</b></em> Button is currently under reconstruction do to problems, please do not click</p>
+</body>
+<br>
+<h1>MortarFin</h1>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    header('Location: unionsite.php');
-}
+<h2><a href='chess.com'>-Chess-</a></h2>
+<h2><a href='placeholder.php'>-Minesweeper-</a></h2>
 
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?>
+</body>
+
+</html>
