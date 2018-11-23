@@ -4,40 +4,50 @@
 <title>Games Home Page</title>
 
 <style>
+
 html{
  background-image: url("https://itsshowtimenj.files.wordpress.com/2013/10/abstractdesktop-astounding-wood-background-wallpaper-backgrounds.jpg");
  background-size: 100%;
  background-attachment: fixed;
 }
+
+
 body{
  border: 2px solid brown;
  border-radius: 10px;
  background: rgba(139,69,19,0.3);
  text-align: center;
 }
+
+
 p {
  text-align: center;
 }
-div{
- text-align: center;
- background-color: #689df2;
- transform: translate(0, 100%)
-}
-a{
- border: 2px solid blue;
+
+
+a:link {
+ color: black;
+ border: 2px solid brown;
  border-radius: 10px;
- background: rgba(0,191,255,0.5);
- opacity: 0.9;
+ background: rgba(139,69,19,0.5);
+  font-size:2.3vw;
 }
+
+
 a:hover {
- background: rgba(70,240,255,0.9);
+ color: ;
+ background: rgba(210,105,30,0.9);
 }
+
+
 h1{
  text-align: center;
  color: white;
  font-family: Arial;
  font-size:10vw;
 }
+
+
 </style>
 
 </body>
