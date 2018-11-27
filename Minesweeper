@@ -1,0 +1,25 @@
+<form method="post">
+    Hight:  <input type="text" name="hight" /><br />
+    With: <input type="text" name="with" /><br />
+    <input type="submit" name="submit" value="Submit me!" />
+</form>
+<?php
+if (isset($in_height)) {
+$in_height   = $_POST['hight'];
+$in_width    = $_POST['with'];
+}
+$counter     = "*";
+$temp_width  = 0;
+$temp_height = 0;
+if (isset($in_height)) {
+echo "<table>";
+for($temp_height = 0; $temp_height < $in_height; $temp_height++) {
+    echo "<tr>";
+    for($temp_width = 0; $temp_width < $in_width; $temp_width++){
+        echo "<td>$counter</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+}
+?>
