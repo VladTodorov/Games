@@ -50,3 +50,39 @@ for($k = 0; $k < 8; $k++){
 }
 echo "</table>";
 ?>
+
+
+
+<html>
+<head>
+<style> 
+myDIV {
+    color 
+}
+</style>
+</head>
+<body>
+
+<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+<p>Note that even though the element is hidden, it stays in its original position and size.</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.visibility === 'hidden') {
+        x.style.visibility = 'visible';
+    } else {
+        x.style.visibility = 'hidden';
+    }
+}
+</script>
+
+</body>
+</html>
