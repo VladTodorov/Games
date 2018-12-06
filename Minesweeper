@@ -1,9 +1,26 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  z-index: 2;
+}
+.td {
+  z-index: 2;
+}
+</style>
+</head>
+
 <form method="post">
     Hight:  <input type="text" name="hight" /><br />
     With: <input type="text" name="with" /><br />
     <input type="submit" name="submit" value="Submit me!" />
 </form>
+
 <?php
 $in_height   = $_POST['hight'];
 $in_width    = $_POST['with'];
@@ -15,7 +32,7 @@ echo "<table>";
 for($temp_height = 0; $temp_height < $in_height; $temp_height++) {
     echo "<tr>";
     for($temp_width = 0; $temp_width < $in_width; $temp_width++){
-        echo "<td bgcolor='gray' width = '50' height = '50'>$counter</td>";
+        echo "<td bgcolor='gray' width = '50' height = '50'><div class='square'></div>$counter</td>";
         $counter++;
     }
     echo "</tr>";
